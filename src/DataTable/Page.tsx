@@ -4,7 +4,7 @@ import { Button } from '../shared/button';
 interface PageProps {
 	pageNumber: number;
 	currentPageNumber: number;
-	onChange: (value: any) => void | undefined;
+	onChange: (value: any) => void;
 }
 
 const Page: FC<PageProps> = ({ pageNumber, currentPageNumber, onChange }) => {
@@ -19,11 +19,6 @@ const Page: FC<PageProps> = ({ pageNumber, currentPageNumber, onChange }) => {
 
 	const click = (event: any) => {
 		event.preventDefault();
-
-		if (!pageNumber) {
-			return null;
-		}
-
 		onChange(pageNumber);
 	}
 

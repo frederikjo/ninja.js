@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
 
 interface RowProps {
-	edit_path: string;
-	name1: string;
-	email: string;
+	row: {
+		edit_path: string;
+		name1: string;
+		email: string;
+	}
 }
 
 export const Row: FC<RowProps> = (props: RowProps) => {
