@@ -1,4 +1,4 @@
-import React, { useState, FC, useEffect } from 'react';
+import React, { useState, FC } from 'react';
 
 import Pagination from './Pagination';
 import Row from './Row';
@@ -24,7 +24,7 @@ const DataTable: FC<DataTableProps> = (props) => {
 		let rowsFound = rows
 
 		if (text) {
-			rowsFound = rows.filter((row) => {
+			rowsFound = props.rows.filter((row) => {
 				return row.name1.toLowerCase().search(text.toLowerCase()) > -1 ||
 					(row.email && row.email.toLowerCase().search(text.toLowerCase()) > -1)
 			})
