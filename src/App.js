@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DataTable from './DataTable';
+import DataTable from './components/DataTable/datatable';
 import './styles/App.scss';
 
 class App extends Component {

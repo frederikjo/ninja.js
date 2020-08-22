@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Button } from '../shared/button';
+import { Button } from '../../../shared/button';
 
 interface PageProps {
 	pageNumber: number;

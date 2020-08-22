@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import Page from './Page';
+import Page from '../page/page';
 
 interface PaginationProps {
 	currentPageNumber: number;

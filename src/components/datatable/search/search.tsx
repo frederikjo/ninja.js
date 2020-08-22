@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../shared/input';
+import Input from '../../../shared/input';
 
 const Search = (props: any) => {
 	const { onSearch } = props

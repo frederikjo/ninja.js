@@ -1,8 +1,8 @@
 import React, { useState, FC } from 'react';
 
-import Pagination from './Pagination';
-import Row from './Row';
-import Search from './Search';
+import Pagination from './pagination/pagination';
+import Row from './row/row';
+import Search from './search/search';
 
 interface DataTableProps {
 	rowsPerPage: number;
@@ -65,4 +65,4 @@ DataTable.defaultProps = {
 	rowsPerPage: 40,
 };
 
-export default DataTable
+export default DataTable;
